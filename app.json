@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "my-expo-app",
+    "slug": "my-expo-app",
+    "version": "1.0.0",
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "experiments": {
+      "tsconfigPaths": true
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-status-bar",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "O app acessa suas fotos para anexar o caminhão carregado.",
+          "cameraPermission": "O app usa a câmera para fotografar o caminhão carregado."
+        }
+      ]
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    }
+  }
+}
